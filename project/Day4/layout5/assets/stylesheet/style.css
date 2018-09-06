@@ -1,0 +1,48 @@
+h1{
+    text-align: center;
+}
+h2{
+    display: inline;
+    margin:20px;
+}
+.container{
+    box-sizing: border-box;
+    background:black;
+    margin:0 auto;
+    height: 400px;
+    width: 400px;
+    border:20px solid lightcoral;
+}
+.content{
+    width: 280px;
+    height: 280px;
+    background:aqua;
+    border:20px solid #bada55;
+    margin:20px;
+}
+.list1,.list2,.list3,.list4{
+    width:20px;
+    height:20px;
+    background: lightcoral;
+    border-radius: 50%;
+    display: inline-block;
+}
+.list2{
+    background:black;
+}
+.list3{
+    background: #bada55;
+}
+.list4{
+    background:aqua;
+
+    
+}
+.list{
+    width: 578px;
+    margin:20px auto;
+
+}
+.list-wrapper {
+    display: inline-block;
+}

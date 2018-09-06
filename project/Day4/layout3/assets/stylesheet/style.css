@@ -1,0 +1,45 @@
+.main{
+    margin:0 auto;
+    width:80%;
+}
+.box1,.box5,.box9{
+    width:50%;
+    height:200px;
+    margin:5px;
+    background:#f36767;
+    display:inline-block;
+}
+.box2,.box3,.box4,.box6,.box7,.box8{
+    width:20%;
+    height:200px;
+    margin:5px;
+    background:#136d65;
+    display: inline-block;
+}
+.box3{
+    background:#cf54e4;
+}
+.box4{
+    background:#5abce8;
+}
+.box5{
+    background:#63b567;
+}
+.box6{
+    background:#4fd854;
+}
+.box7{
+    background:#edff28;
+}
+.box8{
+    background:#ff8c0a;
+}
+.box9{
+    background:red;
+}
+p{
+    display:inline-block;
+    margin: 30px;
+    color:white;
+    font-weight: bold;
+}
