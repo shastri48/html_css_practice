@@ -6,21 +6,22 @@ h2{
     margin:20px;
 }
 .container{
-    box-sizing: border-box;
+    display: inline-block;
     background:black;
-    margin:0 auto;
-    height: 400px;
-    width: 400px;
     border:20px solid lightcoral;
 }
+.center{
+    text-align: center;
+}
 .content{
-    width: 280px;
-    height: 280px;
+    width: 300px;
+    height: 300px;
     background:aqua;
     border:20px solid #bada55;
     margin:20px;
+    display: inline-block;
 }
-.list1,.list2,.list3,.list4{
+.color{
     width:20px;
     height:20px;
     background: lightcoral;
@@ -34,15 +35,9 @@ h2{
     background: #bada55;
 }
 .list4{
-    background:aqua;
-
-    
+    background:aqua;   
 }
 .list{
     width: 578px;
     margin:20px auto;
-
-}
-.list-wrapper {
-    display: inline-block;
 }

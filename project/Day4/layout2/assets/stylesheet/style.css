@@ -6,14 +6,14 @@ h3{
     border:2px solid;
     margin:0 auto;
 }
-.box1,.box2,.box3,.box4{
+.box{
     width:160px;
     height:100px;
     background:#e6e1b5; 
     display:inline-block;
     margin:12px;
 }
-.box2,.box3{
+.box1{
     border:10px solid;
 }
 hr{
@@ -22,7 +22,7 @@ hr{
     margin-bottom:50px;
     border:0.5px dashed;
 }
-.box4{
+.box2{
     box-sizing: border-box;
     border:10px solid;
 }
