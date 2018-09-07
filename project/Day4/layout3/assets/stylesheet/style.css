@@ -8,6 +8,7 @@
     margin:5px;
     background:#f36767;
     display:inline-block;
+    vertical-align: top;
 }
 .box2{
     width:20%;
@@ -15,6 +16,7 @@
     margin:5px;
     background:#136d65;
     display: inline-block;
+    vertical-align: top;
 }
 .box3{
     background:#cf54e4;
