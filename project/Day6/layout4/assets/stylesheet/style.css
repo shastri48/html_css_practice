@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+}
+.left{
+    background: pink;
+    width:50%;
+    position: fixed;
+    float:left;
+    }
+.right{
+    background: lightblue;
+    width:50%;
+    float:right;
+}
+p{
+    text-align: left;
+    padding: 10px;
+}
