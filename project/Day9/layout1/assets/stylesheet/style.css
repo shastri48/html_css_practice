@@ -67,7 +67,7 @@ HEADING
     padding:10px 6rem;
     background:#bababa;
 }
-a{  font-size:16px;
+a{  font-size:14px;
     text-decoration: none;
     padding:10px;
     color:#000;
@@ -181,7 +181,20 @@ h3{
     }
     li{
         width:33%;
-        border:1px solid rgb(175, 172, 172);
+    }
+    ul{
+        padding-left: 4em;
+        text-align: left;
+    }
+    li{ 
+        width:32%;
+        padding:5px;
+        display:inline-block;
+        border-bottom:1px solid rgb(175, 172, 172);
+        border-right:1px solid rgb(175, 172, 172);
+    }
+    a{
+        padding:0.2rem;
     }
     
 }
@@ -198,25 +211,35 @@ h3{
         margin-left:0em;
     }
     .para1,.para2,.para3{
-        text-align: center;
+        text-align: left;
     }
+    .bottom{
+        margin-left: 2em;
+    }
+
     .right{
         width:80%;
         display: block;
     }
     .left{
-        width:100%;
+        width:90%;
         display:block;
     }
     .heading{
         padding:40px 2rem;
      }
-    .navigation{
-        padding:10px 0rem;
+    ul{
+        padding-left: 4em;
     }
-    li{
-        width:25%;
-        border:1px solid rgb(175, 172, 172);
+    li{ 
+        width:48%;
+        padding:5px;
+        display:inline-block;
+        border-bottom:1px solid rgb(175, 172, 172);
+        border-right:1px solid rgb(175, 172, 172);
+    }
+    a{
+        padding:0.2rem;
     }
 
     .box2,.box3{
@@ -224,13 +247,26 @@ h3{
     }
 }
 @media all and (max-width:480px){
-    li{
-        width:25%;
-    }
+   
     a{
         padding:0px;
     }
     .box2,.box3{
         display: none;
     }
+    ul{
+        padding-left: 3em;
+        border:none;
+    }
+    li{ 
+        width:48%;
+        padding:5px;
+        display:inline-block;
+        border-bottom:1px solid rgb(175, 172, 172);
+        border-right:1px solid rgb(175, 172, 172);
+    }
+    a{
+        padding:0.2rem;
+    }
+    
 }
