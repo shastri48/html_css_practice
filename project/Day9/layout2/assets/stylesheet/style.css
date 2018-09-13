@@ -69,8 +69,6 @@ header:after{
 header{
     *zoom:1;
 }
-
-
 .header{
     float:left;
 }
@@ -84,8 +82,91 @@ li{
 }
 a{
     color: #444;
+    font-weight: bold;
 }
 .main-pic{
     width:100%;
     height:auto;
+}
+
+.bottom{
+    margin-top:2rem;
+}
+h3{
+    font-size:1.5em;
+    font-weight: bold;
+}
+
+.left{
+    width:60%;
+    float:left;
+    line-height: 1.5rem;
+    display: inline-block;
+}
+.right{
+    width:35%;
+    float:right;
+    font-size: 14px;
+    line-height: 21px;
+    font-style: italic;
+    display: inline-block;
+}
+
+
+
+
+
+
+@media all and (max-width:565px){
+    .top-header{
+        padding:0.7rem;
+    }
+    
+    .top-nav{
+        display: inline-block;
+        padding: 0.5rem;
+    }
+    .skip{
+        text-align: center;
+        background: #85f1ec;
+    }
+    .wrapper{
+        width:92%;  
+    }
+    li{
+        display: block;
+        width:100%;
+        background:#e2deb4;
+        padding:0.5em;
+        font-weight: bold;
+        margin-bottom: 0.2em;
+    }
+    .navigation{
+        text-align: center;
+       
+        float:none;
+        margin-top:0.5em;  
+    }
+    .header{
+        display: block;
+        float:none;
+    }
+    .left{
+        width:100%;
+        float:none;
+        display: block;
+    }
+    .right{
+        margin-top:0.5em;
+        margin-bottom: 2em;
+        width:100%;
+        float:none;
+        display: block;
+    }
+}
+
+@media all and (min-width:565px){
+    .top-header{
+        display: none;
+    }   
 }
