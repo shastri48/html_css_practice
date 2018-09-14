@@ -111,6 +111,8 @@ h2{
     padding:4rem;
 }
 .top-details-para{
+    letter-spacing: 0.07rem;
+    /* word-spacing: 0.1rem; */
     color:rgba(58, 55, 56, 0.726);
 }
 .para1{
@@ -141,15 +143,13 @@ h2{
 
 /* album */
 
-.album{
-    background: #fff;
-    position: relative;
+.album {
+    height: 434.617px;
 }
 
-.album-image,.album-description{
+.album-image, .album-description {
     width:50%;
     float:left;
-    vertical-align: top;
 }
 .album-image{
     font-size: 0;
@@ -160,23 +160,20 @@ h2{
 .second{
     float:right;
 }
-.album-description1{
-    position: absolute;
-    top:35%;
-    left:80%;
-    /* right:10%; */
-    transform: translate(-50%,0%);
+.album-description{
+    position: relative;
+    min-height: 434.617px;
+    height: 100%;
+    background: #fff;
 }
-.album-description2{
+.first-detail {
     position: absolute;
-    top:35%;
-    left:20%;
-    /* right:10%; */
-    transform: translate(-50%,0%);
-}
-.first-detail{
-    width:30rem;
-    height:auto;
+    width: 80%;
+    margin: 0 auto;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
 }
 
 
@@ -194,3 +191,40 @@ h2{
     color:rgba(253, 253, 253, 0.658);
 
 }
+
+
+/* responsive */
+
+@media all and (max-width:960px){
+    .gallary-image-item{
+        width:100%;
+    }  
+    .album-image,.album-description,.album-description1,.album-description2{
+        width:100%;
+    } 
+    .gallary{
+        margin:2rem;
+    }
+    .wrapper{
+        padding: 0rem 1.5rem;
+    }
+}
+
+@media all and (max-width:480px){
+    body{
+        font-size: 10px;
+    }
+    .top-details{
+        padding:1rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+}
+
+@media all and (max-width:480px){
+    h1{
+        font-size: 4rem;
+    }
+}
+
