@@ -157,8 +157,11 @@ h2{
 .album-image-item{
     width:100%;
 }
-.second{
+.right{
     float:right;
+}
+.left{
+    float: left;
 }
 .album-description{
     position: relative;
