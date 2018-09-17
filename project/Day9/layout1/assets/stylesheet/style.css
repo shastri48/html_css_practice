@@ -1,3 +1,7 @@
+
+/* =================
+	 css reset
+	 ================= */
 /* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
   License: none (public domain)
 */
@@ -51,7 +55,6 @@ table {
 }
 
 /* -------------------------------------
-CSS RESET 
 HEADING 
 ------------------------------------- */
 
@@ -72,7 +75,6 @@ a{  font-size:14px;
     text-decoration: none;
     padding:10px;
     color:#000;
-    /* border-right:1px dotted #999; */
 }
 .top{
     margin:4rem 6rem;
