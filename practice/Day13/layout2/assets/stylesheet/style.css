@@ -1,0 +1,24 @@
+.container{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 50px); 
+  grid-auto-flow: dense;
+  place-items: ;
+  /* background: cyan;  */
+  /* justify-content: right; */
+}
+.item{
+  background: greenyellow;
+}
+.item:nth-child(3n){
+  background: cornflowerblue;
+  grid-column: span 2;
+  grid-auto-flow: dense;
+}
+.item:nth-child(4n){
+  background: yellow;
+}
+.item7{
+  grid-column: 7/10;
+}
