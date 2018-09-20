@@ -92,13 +92,16 @@ header
   background: rgb(231, 225, 181);
   color:rgb(88, 81, 21);
 }
-.gallery{
+/* ============================
+gallery
+============================ */
+.gallery {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 150px);
   grid-auto-flow: row;
 }
-.item1{
+.item1 {
   background: black;
   color:white;
   grid-column: 1/span 2;
@@ -137,7 +140,9 @@ header
   grid-column: 4/span 3;
   grid-row:5/span 2;
 }
-
+/* ============================
+responsive
+============================ */
 
 @media (max-width:720px){
   .gallery{
