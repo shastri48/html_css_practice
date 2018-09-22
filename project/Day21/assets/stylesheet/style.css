@@ -1,0 +1,172 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+/* ol, ul {
+  list-style: none;
+} */
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* ==============================
+base
+============================= */
+:root {
+  font-size: 16px;
+}
+
+
+/* ================================
+wrapper
+================================ */
+.wrapper {
+  max-width: 1300px;
+  width:100%;
+  padding:0 80px;
+  margin:0 auto;
+}
+
+
+/* ================================
+navigation
+================================ */
+.header {
+  background: rgb(255, 84, 5);
+}
+.navigation {
+  padding: 10px 0;
+}
+.nav-items {
+  display: grid;
+  grid-template-columns: repeat(15, auto)
+}
+.nav-items li {
+  display: inline-block;
+}
+a{
+  text-decoration: none;
+  color:white;
+  font-size: 1.5rem;
+}
+
+/* ================================
+main
+================================ */
+.content {
+  background: rgb(211, 198, 154);
+}
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  padding: 1rem;
+}
+.box-item {
+  background: rgb(34, 121, 172);
+  padding: 40px;
+  font-size: 1.5rem;
+  color:rgb(230, 224, 224);
+  box-shadow: 5px 6px 2px rgba(0, 0, 0, .6);
+}
+.box-item ol {
+  list-style-type: decimal;
+}
+.box-item ul {
+  list-style-type: disc;
+}
+.box-item2 li {
+  background: url("../media/tick.svg") 0 50% no-repeat;
+  background-size: 1rem;
+  list-style-type: none;
+  padding-left: 18px;
+}
+
+.content-details{
+  padding:20px 0;
+}
+dt{
+  font-size: 2rem;
+  margin:20px 0;
+}
+
+
+/* ================================
+footer
+================================ */
+.footer{
+  background: black;
+}
+
+/* ================================
+responsive
+================================ */
+@media (max-width:1020px) and (min-width:580px){
+  .wrapper{
+    padding:20px;
+  }
+  .box-item2{
+    grid-column: span 2;
+  }
+}
+
+@media (max-width:580px){
+  .wrapper {
+    padding: 20px;
+  }
+  .nav-items {
+    grid-template-columns: repeat(5, auto)
+  }
+  a, .box-item{
+    font-size: 1rem; 
+  }
+  .navigation {
+    padding: 2px 0;
+  }
+}
+
+@media (max-width:360px){
+  .wrapper {
+    padding: 0;
+  }
+}
