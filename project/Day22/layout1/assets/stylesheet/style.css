@@ -189,7 +189,7 @@ input, textarea{
 main - footer
 ====================== */
 .footer{
-  background: black;
+  background: black;padding: 20px 0;
 }
 iframe {
   padding: 2rem;
