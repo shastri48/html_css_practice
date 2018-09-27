@@ -1,0 +1,29 @@
+.box{
+  color:white;
+  box-sizing: border-box;
+  font-size: 100px;
+  text-align: center;
+  padding: 10px;
+}
+/* colors for each boxes */
+.box1 {background:rgb(197, 126, 126);}
+.box2 {background:rgb(245, 242, 242);}
+.box3 {background:rgb(139, 221, 92);}
+.box4 {background:rgb(160, 197, 28);}
+.box5 {background:rgb(53, 50, 221);}
+.box6 {background:rgb(184, 25, 78);}
+.box7 {background:rgb(240, 17, 221);}
+.box8 {background:rgb(30, 232, 247);}
+.box9 {background:rgb(248, 204, 5);}
+.box10{background:rgb(209, 137, 55);}
+
+/* container part */
+ul {
+  display: flex; 
+  /* flex-wrap: wrap; */
+}
+li{
+  display: inline-block;
+  background:lightblue;
+  flex:1;
+}

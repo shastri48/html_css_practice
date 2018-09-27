@@ -1,0 +1,21 @@
+.elements {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+.item.large {
+  font-size: 40px;
+}
+.item.small {
+  font-size: 20px;
+}
+.item {
+  box-sizing: border-box;
+  background: rgba(104, 146, 50, 0.4);
+  margin:10px;
+  padding: 20px;
+  font-size: 30px;
+  flex:1;
+  /* flex: 1 1 calc(33.33% - 20px); */
+}
