@@ -38,6 +38,54 @@
 .fa-arrow-right {
 	right: 30px !important;
 }
+.builder {
+	border: none;
+	background: green;
+	padding: 20px 40px;
+	position: relative;
+	transition: background linear 150ms;
+}
+.bubble1, .bubble2 {
+	width:20px;
+	height: 20px;
+	background: yellow;
+	border-radius: 50%;
+	position: absolute;
+	display: none;
+
+}
+
+.builder:hover {
+	.bubble1 {
+		display: inline-block;
+		animation: slide 200ms linear;
+	}
+	.bubble2 {
+		display: inline-block;
+		animation: slide2 200ms linear;
+	}
+	background: yellow;
+} 
+@keyframes slide {
+	0% {
+		left: 0;
+		top:30%;
+	}
+	100% {
+		left: 50%;
+		top:30%;
+	}
+}
+@keyframes slide2 {
+	0% {
+		right: 0%;
+		top:30%;
+	}
+	100% {
+		right: 50%;
+		top:30%;
+	}
+}
 // ====================
 // Header
 // ====================
@@ -92,6 +140,7 @@
 	&.active:hover:after {
 		animation: none;
 	}
+	
 
 	&:hover:after {
 		animation: width 200ms linear forwards;
