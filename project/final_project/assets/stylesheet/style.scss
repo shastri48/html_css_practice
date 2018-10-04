@@ -397,12 +397,15 @@
 	color:white;
 }
 .ad__button {
-	padding: 1rem;
+	padding: 1rem 2rem;
 	background: transparent;
 	border: 2px solid white;
 	border-radius: 4px;
 	font-size: 1.7rem;
 	color:white;
+	&:hover {
+		color: black;
+	}
 	.fas {
 		margin-right: .5rem;
 	}
@@ -523,6 +526,11 @@
 		padding: 1rem 2rem;
 		font-size: 1rem;
 		font-weight: bold;
+		transition: background linear 250ms;
+		&:hover {
+			background:white;
+			color: black;
+		}
 	}
 }
 .black__triangle {
@@ -667,7 +675,19 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+	} 
+}
+.facebook:hover {
+	background: #0956b5;
+}
+.twitter:hover {
+		background: #28d4f9;
 	}
+.google:hover {
+	background: #f96a23;	
+}
+.linkedin:hover {
+	background: #0E7EB5;
 }
 // ====================
 // client saying
@@ -692,6 +712,13 @@
 		font-size: 1rem;
 	}
 	h3 {
+		margin: 2rem 0;
+		font-family: 'Yesteryear', cursive;
+		font-size: 2rem;
+		font-weight: bold;
+		color:white;
+	}
+	h4 {
 		margin: 2rem 0;
 		color: skyblue;
 		font-size: 1rem;
@@ -833,7 +860,14 @@
 		justify-self: center;
 	}
 	.footer {
-		grid-template-columns: 1fr;
+		grid-template-columns: 1fr 1fr;
 		text-align: center;
+		.footer__header {
+			grid-column: span 2;
+		}
+		.newsletter {
+			grid-column: span 2;
+		}
 	}
+
 }
