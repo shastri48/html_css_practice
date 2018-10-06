@@ -101,7 +101,7 @@ a {
 .img-responsive {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100px;
 }
 .clearfix {
   *zoom: 1;
@@ -117,12 +117,13 @@ a {
 }
 .orange {
   background: rgb(233, 168, 47);
+  background: #e0aa47;
 }
 .black {
   background: rgb(22, 21, 21);
 }
 .red {
-  background: rgb(240, 49, 49);
+  background: tomato;
 }
 .white {
   background: white;

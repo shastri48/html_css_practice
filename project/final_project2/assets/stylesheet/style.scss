@@ -3,16 +3,16 @@
 // ====================
 // Header logo
 // ====================
-.container {
+.heading {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .header__logo {
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
   .logo__image {
-    width: 140%;
-    transform-origin: center;
+    width: 100%;
+    height: 100%;
   }
   h1 {
     position: absolute;
@@ -26,14 +26,13 @@
 // ====================
 .header__details {
   background: rgb(245, 212, 186);
-  position: relative;  
+  // position: relative;  
   ul{
     display: flex;
-    // position: absolute;
-    // top:0;
+    
     justify-content:space-between; 
     width:80%;
-    margin: 20px auto;
+    margin: 20px auto 0 auto;
     li {
       a {
         font-size: 1rem;
@@ -43,13 +42,13 @@
     }
     li:first-child {
       a {
-        color: orange;
+        color: #e0aa47;
       }
     }
   }
   .header__desc {
-    padding: 0 20px;
-    position: absolute;
+    padding: 2rem 20px;
+    position: relative;
     top: 50%;
     transform: translateY(-50%);
     color: rgb(82, 70, 70);
@@ -80,6 +79,10 @@
 // ====================
 // about section
 // ====================
+.about__section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
 .about {
   padding: 30px 30px;
   h2 {
@@ -87,7 +90,7 @@
   }
   .details__header {
     font-weight: normal;
-    color: orange;
+    color: #e0aa47;
     margin:20px 0
     30px 0;
   }
@@ -101,7 +104,7 @@
 // ====================
 .my__skill {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   .about-img {
     height:100%;
   }
@@ -140,9 +143,13 @@
 // ====================
 // skill item
 // ====================
+.skill {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
 .skill__item {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   color:rgb(214, 202, 202);
   i {
     font-size: 3rem;
@@ -165,8 +172,12 @@
 // ====================
 // experience
 // ====================
-.experience__image {
-  background: url(../media/experience-img.jpg);
+.experience2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.img-responsive {
+  height: 100%;
 }
 .experience {
   padding: 3rem;
@@ -193,8 +204,12 @@
 // ====================
 // form
 // ====================
+.address__section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  
+}
 .form {
-  padding: 2rem;
+  padding: 3rem;
   color: white;
   h2 {
     font-size: 2rem;
@@ -230,10 +245,12 @@
 // ====================
 // address
 // ====================
+
 .address {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   .address__image {
+    width: 100%;
     height: 100%;
   }
   .address__details {
@@ -258,9 +275,9 @@
 // ====================
 // google map
 // ====================
-.map {
+.map__section {
   padding: 2rem;
-  grid-column: span 2;
+
 }
 // ====================
 // footer
@@ -271,7 +288,7 @@
   text-align: center;
   padding: 5rem 0;
   .design {
-    color: orange;
+    color: #e0aa47;
   }
   .media__icon {
     padding-top:3rem;
@@ -286,5 +303,44 @@
       }
     }
   }
+}
 
+// ====================
+// responsive
+// ====================
+@media (max-width: 1020px){
+  :root {
+    font-size: 12px;
+  }
+  .address__section {
+    grid-template-columns: 1fr;  
+  }
+  .address {
+    grid-template-columns: 1fr;
+  }
+  .google__map {
+    height:300px;
+  }
+  .header__details {
+    ul {
+      li {
+        a {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+@media (max-width:720px) {
+  .experience2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px){
+  .header__details {
+    ul {
+      display: none;
+    }
+  }
 }
