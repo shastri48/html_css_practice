@@ -1,0 +1,229 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 0.5; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+body {
+  font-size: 14px;
+  background-color: #16191e;
+  line-height: 1.0em; }
+
+h2, h3, h4, h5, h6, p {
+  color: #434345; }
+
+h1 {
+  font-size: 3em;
+  line-spacing: 1.5em;
+  line-height: 1.3em; }
+
+h2 {
+  font-size: 2em;
+  font-weight: 600; }
+
+h3 {
+  font-size: 1.20em;
+  font-weight: bolder;
+  padding: 10px 0; }
+
+h4 {
+  font-size: 1.12em;
+  font-weight: bolder; }
+
+h5 {
+  font-size: .83em;
+  font-weight: bolder; }
+
+h6 {
+  font-size: .75em;
+  font-weight: bolder; }
+
+p {
+  font-size: 1rem;
+  line-spacing: 2em;
+  font-weight: 200;
+  line-height: 1.2em; }
+
+a {
+  text-decoration: none; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.text-left {
+  text-align: left; }
+
+.img-responsive {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.clearfix {
+  *zoom: 1; }
+  .clearfix:before, .clearfix:after {
+    display: table;
+    content: '';
+    line-height: 0; }
+  .clearfix:after {
+    clear: both; }
+
+.text-padding {
+  padding: 1.2em 0; }
+
+.main__container {
+  max-width: 1100px;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 9px;
+  background-color: #fcfcfc; }
+
+.primary_container {
+  background: url("../media/main.jpg");
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(190, 192, 196, 0.2);
+  position: relative; }
+
+.contact_container {
+  background: #fcfcfc;
+  width: 100%;
+  padding: 20px;
+  position: relative; }
+  .contact_container .navList a {
+    color: black; }
+
+.hero__content {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  text-align: center;
+  color: #fff; }
+  .hero__content .booking {
+    background: #34ba34;
+    border-radius: 15px;
+    border: none;
+    padding: 8px 15px;
+    color: #fff;
+    font-size: 10px;
+    cursor: pointer; }
+
+.navList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px; }
+  .navList a {
+    color: white;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 10px 5px;
+    transition: all 0.5s;
+    font-size: 1.1em;
+    margin-right: 1rem; }
+  .navList a:hover {
+    background: rgba(0, 0, 0, 0.3); }
+  .navList span {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 600;
+    font-size: 1.5em; }
+
+.hotel {
+  position: absolute;
+  top: 12.1%;
+  left: 51%; }
+
+.secondary_container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0; }
+  .secondary_container h3 {
+    font-size: 30px; }
+  .secondary_container .service__list {
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px; }
+    .secondary_container .service__list .service_item h5 {
+      font-size: 16px; }
+    .secondary_container .service__list .service_item p {
+      font-size: 12px; }
+    .secondary_container .service__list .service_item img {
+      width: 100%;
+      height: auto; }
+
+.service-image {
+  width: 400px;
+  height: 400px; }
+
+.section-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+
+.contactSection {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: auto 1fr; }
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  padding: 2em 8em;
+  background-color: #cbced3; }
+  .footer li {
+    list-style-type: none;
+    margin: 10px 0;
+    color: #434345; }
+    .footer li a {
+      color: #434345; }
+
+/*# sourceMappingURL=style.css.map */

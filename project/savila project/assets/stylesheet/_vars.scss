@@ -1,0 +1,23 @@
+$font-family: 'Roboto', sans-serif;
+
+// $secondary-font-family: 'Archivo Black', sans-serif;
+$primary-color: rgb(255, 173, 1);
+$secondary-color: #84c450;
+$primary-text-color: #fff;
+$secondary-text-color: #434345;
+$text-color: #071733;
+$button-color: #34ba34;
+
+
+%flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+%grid {
+	display: grid;
+	grid-template-columns: repeat(autofit, minmax(200px, 1fr));
+	grid-gap: 20px;
+}
+
