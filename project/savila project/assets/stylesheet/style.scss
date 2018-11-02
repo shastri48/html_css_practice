@@ -23,7 +23,7 @@
   box-shadow: inset 0 0 0 2000px rgba(190, 192, 196, 0.2);
   position: relative;
 }
-.contact_container {
+.contact_container, .catalog_container {
 	background: #fcfcfc;
 	width: 100%;
 	padding : 20px;
@@ -80,7 +80,7 @@
 	span {
 		font-family: 'Dancing Script', cursive; 
 		font-weight: 600;
-		font-size: 1.5em
+		font-size: 1.5em;
 	}
 
 }
@@ -103,11 +103,11 @@
   padding: 20px 0;
   h3 {
     font-size: 30px;
-  }
+	}
   .service__list{
     margin: 30px 0;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 25px;
     .service_item {
       h5 {
@@ -121,22 +121,91 @@
         height: auto;
       }
     }
-  }
+	}
+	.service__main {
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));	
+	}
 }
 .service-image {
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
 }
 .section-two {
+	position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+	p {
+		display: inline-block;
+		position: absolute;
+		left: 60%;
+		top: 50%;
+		transform: translateY(-50%);
+	}
 }
 .contactSection {
 	display: grid;
+	grid-template-columns: 1fr 3fr;
 	grid-gap: 30px;
-  grid-template-columns: auto 1fr;
+}
+.contact__form {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 30px;
+}
+.contact__details input{
+	border: none;
+	margin: 10px;
+	border-bottom: 1px solid black;
+}
+.contact__us .input1 {
+	border: none;
+	width: 100%;
+	border-bottom: 1px solid black;
+	margin: 10px 0;
+}
+.input2 {
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid black;
+	height: 80px;
 }
 
+
+// catalog
+
+.cat__book {
+	float: right;
+	background: rgb(13, 119, 13);
+	border : none;
+	padding: 5px 10px;
+	border-radius: 10px;
+	color: white;
+}
+.cat__price {
+	display: inline-block;
+	margin-top:10px;
+	font-size: 16px;
+}
+.cat__item {
+	margin-top: 10px;
+}
+
+
+// about
+.about__details {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.our__future{
+	display: grid;
+	grid-gap: 80px;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+
+// footer
 .footer{
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);

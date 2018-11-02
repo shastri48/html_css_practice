@@ -130,12 +130,12 @@ a {
   box-shadow: inset 0 0 0 2000px rgba(190, 192, 196, 0.2);
   position: relative; }
 
-.contact_container {
+.contact_container, .catalog_container {
   background: #fcfcfc;
   width: 100%;
   padding: 20px;
   position: relative; }
-  .contact_container .navList a {
+  .contact_container .navList a, .catalog_container .navList a {
     color: black; }
 
 .hero__content {
@@ -190,7 +190,7 @@ a {
   .secondary_container .service__list {
     margin: 30px 0;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 25px; }
     .secondary_container .service__list .service_item h5 {
       font-size: 16px; }
@@ -199,19 +199,76 @@ a {
     .secondary_container .service__list .service_item img {
       width: 100%;
       height: auto; }
+  .secondary_container .service__main {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
 
 .service-image {
-  width: 400px;
-  height: 400px; }
+  width: 350px;
+  height: 350px; }
 
 .section-two {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr; }
+  .section-two p {
+    display: inline-block;
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    transform: translateY(-50%); }
 
 .contactSection {
   display: grid;
-  grid-gap: 30px;
-  grid-template-columns: auto 1fr; }
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 30px; }
+
+.contact__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px; }
+
+.contact__details input {
+  border: none;
+  margin: 10px;
+  border-bottom: 1px solid black; }
+
+.contact__us .input1 {
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid black;
+  margin: 10px 0; }
+
+.input2 {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid black;
+  height: 80px; }
+
+.cat__book {
+  float: right;
+  background: #0d770d;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: white; }
+
+.cat__price {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 16px; }
+
+.cat__item {
+  margin-top: 10px; }
+
+.about__details {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+
+.our__future {
+  display: grid;
+  grid-gap: 80px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
 
 .footer {
   display: grid;
