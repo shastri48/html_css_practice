@@ -86,8 +86,11 @@
 }
 .hotel{
 	position: absolute;
-	top: 12.1%;
+	top: 82%;
 	left: 51%;
+}
+.mainpage {
+	top: 12.1%;
 }
 
 
@@ -111,10 +114,12 @@
     grid-gap: 25px;
     .service_item {
       h5 {
+				margin: 10px 0;
         font-size: 16px;
       }
       p {
-        font-size: 12px;
+				margin: 10px 0;
+        font-size: 14px;
       }
       img {
         width: 100%;
@@ -134,40 +139,83 @@
 	position: relative;
   display: grid;
 	grid-template-columns: 1fr 1fr;
-	p {
+	.service__details {
 		display: inline-block;
 		position: absolute;
 		left: 60%;
 		top: 50%;
 		transform: translateY(-50%);
+		p {
+			margin: 10px 0;
+		}
 	}
 }
+.mission {
+	h4 {
+		margin: 15px 0;
+		font-size: 30px;
+	}
+	p {
+		width: 80%;
+		line-height: 25px;
+	}
+}
+
+
+// contact
+
+
 .contactSection {
 	display: grid;
 	grid-template-columns: 1fr 3fr;
 	grid-gap: 30px;
+	.address {
+		span {
+			display: inline-block;
+			margin: 10px 0;
+			font-size: 20px;
+		}
+	}
 }
 .contact__form {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 30px;
+	grid-gap: 20px;
+	.address{
+		p {
+			font-size: 14px;
+			margin: 10px 0;
+		}
+	}
 }
 .contact__details input{
+	width: 90%;
 	border: none;
 	margin: 10px;
-	border-bottom: 1px solid black;
+	border-bottom: 2px solid rgb(177, 177, 177);
 }
-.contact__us .input1 {
-	border: none;
-	width: 100%;
-	border-bottom: 1px solid black;
-	margin: 10px 0;
-}
-.input2 {
-	width: 100%;
-	box-sizing: border-box;
-	border: 1px solid black;
-	height: 80px;
+.contact__us{
+ .input1 {
+		border: none;
+		width: 100%;
+		border-bottom: 2px solid rgb(177, 177, 177);
+		margin: 10px 0;
+	}
+	.input2 {
+		width: 100%;
+		box-sizing: border-box;
+		border: 2px solid rgb(177, 177, 177);
+		height: 70px;
+	}
+	.submit {
+		color: white;
+		margin:20px 0;
+		float: right;
+		border: none;
+		padding: 5px 20px;
+		border-radius: 20px;
+		background: rgb(16, 202, 16);
+	}
 }
 
 
@@ -191,11 +239,155 @@
 }
 
 
+// room details
+
+.room__details {
+	margin: 10px 0;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-gap: 20px;
+	.service_item_list {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 10px;	
+	}
+	.service_item {
+		h5 {
+			margin: 10px 0;
+			font-size: 16px;
+		}
+		p {
+			margin: 10px 0;
+			font-size: 12px;
+		}
+		img {
+			width: 100%;
+			height: auto;
+		}
+		.cat__book{
+			float: none;
+		}
+		ul {
+			margin-top: 20px;
+			li {
+				list-style-type: square;
+				font-size: 18px;
+				line-height: 30px;
+			}
+		}
+	}
+}
+
+
+
+// blog
+
+.blog__hero {
+	margin: 10px 0;
+	img {
+		width: 100%;
+		height: 350px;
+	}
+}
+.blog__post {
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-gap: 20px;
+	.post_details {
+		h3 {
+			margin: 10px 0;
+		}
+		p {
+			margin: 10px 0;
+		}
+		h4 {
+			margin: 20px 0;
+			font-size: 20px;
+		}
+		img {
+			width: 100%;
+			height: 350px;
+		}
+	}
+	.post_summary {
+		h4 {
+			margin: 20px 0;
+			font-size: 20px;
+		}
+		ul {
+			li {
+				font-size: 16px;
+				padding: 5px 0;
+			}
+		}
+	}
+}
+
+// error
+.error__container {
+	height: 400px;
+	position: relative;
+	.error__details {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		h4 {
+			margin-bottom: 50px;
+		}
+		h3 { 
+			font-size: 100px;
+			margin: 30px 0;
+			text-align: center;
+		}
+		.error {
+			border: none;
+			background: rgb(23, 167, 23);
+			padding: 10px 25px;
+			font-size: 20px;
+			border-radius: 20px;
+		}
+	}
+}
+
+// Product
+
+.luxury {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+	margin: 20px 0;
+	p {
+		display: grid;
+		grid-template-columns: auto 1fr;
+		grid-gap: 10px;
+		align-items: center;
+		img {
+			width:35px;
+			height: auto;
+		}
+	}
+}
+
+
 // about
 .about__details {
 	display: grid;
 	grid-gap: 20px;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	.details__item {
+		p {
+			line-height: 20px;
+			margin:10px;
+			font-size: 14px;
+		}
+	}
+	.left {
+		p {
+			line-height: 30px;
+			font-size: 18px;
+		}
+	}
 }
 
 .our__future{
