@@ -1,0 +1,11 @@
+body {
+  position: relative;
+}
+.modal{
+  background: cyan;
+  /* display: none; */
+  height: 400px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}

@@ -1,0 +1,8 @@
+.watch {
+  display: inline-block;
+  height: 10px;
+  width: 200px;
+  background: black;
+  transform-origin: 100%;
+  transform: rotate(10deg);
+}
